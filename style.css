@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "bbr-medium";
+    src: url('./assets/twelveBBRMedium.ttf');
+  }
+
+body {
+    background-color: #E6E3D6;
+}
+
+text {
+    font-family: "bbr-medium", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    pointer-events:none;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    width: auto;
+    height: 62px;
+    margin: 20px 20px;
+}
+
+h3 {
+    font-family: "bbr-medium", Helvetica, Arial, sans-serif;
+    color: rgb(177, 167, 167);
+    font-size: 40px;
+    position: relative;
+    margin: 0px auto 20px auto;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#chart {
+    position:absolute;
+    width:610px;
+    height:610px;
+    margin: 0 0 0 430px;
+}
+
+#question {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    width:555px;
+    height:555px;
+    background-color: black;
+    border-radius: 50%;
+    border: solid black 8px;
+    text-align: center;
+    top:140px;
+    left:433px;
+    padding:0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    cursor: pointer;
+}
+
+#question h1 {
+    font-size: 55px;
+    color: white;
+    font-weight: bold;
+    font-family: "bbr-medium", Helvetica, Arial, sans-serif;
+    text-align: center;
+    position: absolute;
+    width:100%;
+    padding: 0;
+    margin: 0 auto;
+    top:50%;
+    -webkit-transform:translate(0,-50%);
+            transform:translate(0,-50%);
+}
+
+#question h2 {
+    font-size: 40px;
+    color: #E94548;
+    font-weight: bold;
+    font-family: "bbr-medium", Helvetica, Arial, sans-serif;
+    text-align: center;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    
+    top: 30%;
+    width: 100%;
+    -webkit-transform:translate(0,-50%);
+            transform:translate(0,-50%);
+}
